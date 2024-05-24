@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Weather App With Api</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="weather-form">
+        <h1>Weather App</h1>
+        <form>
+          <input type="text" placeholder="Enter City To Watch Weather" id="cityQuery" autofocus/>
+          <button type="submit">See Weather</button>
+        </form>
+        <p class="error-line">Please Enter something...</p>
+      </div>
+      <div class="weather-detail">
+        <div class="weather-image">
+          <img src="" alt="weather-image" width="200px" id="weatherImage"/>
+        </div>
+        <div class="temp-detail">
+        <div class="temperature-c">
+          <h2 class="celc">0</h2>
+          <sup>°C</sup>
+        </div>
+        <div class="temperature-f">
+          <h2 class="fare">0</h2>
+          <sup>°F</sup>
+        </div>
+    </div>
+        <div class="city-name">
+          <h2 class="weather-desc">Karachi</h2>
+        </div>
+      </div>
+      <div class="weater-notfound">
+          <h2>Sorry Location Not Found😢</h2>
+          <img src="Images/404.png" alt="weather-image" width="200px" id="notFoundImage"/>
+      </div>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
